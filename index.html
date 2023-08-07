@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #495057;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        button[type="submit"], button[type="reset"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="reset"] {
+            margin-left: 10px;
+            background-color: #6c757d;
+        }
+
+        button[type="submit"]:hover, button[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to Weather App</h1>
+        <form action="/" method="post">
+            <label for="city">City Name:</label>
+            <input type="text" id="city" name="city" placeholder="Enter city name">
+            <label for="unit">Unit Type:</label>
+            <input type="text" id="unit" name="unit" placeholder="metric or imperial">
+            <button type="submit">Find Weather</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+</head>
+<body>
+    <h1>Welcome to weather app</h1>
+    <form action="/" method="post">
+        <label for="#city">City Name:</label>
+        <input type="text" id="city" name="city">
+        <label for="#unit">Unit Type:</label>
+        <input type="text" id="unit" name="unit" placeholder="metric or imperial">
+        <button type="submit">find weather</button>
+        <button type="reset">reset</button>
+    </form>
+</body>
+</html> -->
